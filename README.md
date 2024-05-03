@@ -26,3 +26,17 @@ fun main() {
     println("Output = [${result[0]}, ${result[1]!!}]")
 }
 ```
+
+<h1>Write Higher Order Function </h1>
+
+```
+fun addOperation(a:Int,b:Int,func:(Int,Int)->Int):Int{
+    return func(a,b)
+}
+
+
+fun main() {
+    var result = addOperation(10,5) {a,b -> a+b}
+    println(result)
+}
+```

@@ -1,5 +1,23 @@
 # LogicalQuestion
 
+<h2>Reverse String with minimum iteration </h2>
+
+```
+fun reverseString(strReverseString:String){
+   val charArray =  strReverseString.toCharArray();
+   println(charArray.joinToString()); 
+   for(i in 0 until charArray.size/2){
+       val temp = charArray[i];
+       charArray[0] = charArray [charArray.size - i - 1]
+       charArray [charArray.size - i - 1] = temp
+   }
+   println(charArray.joinToString())
+}
+fun main() {
+    reverseString("Siddhant")  // Output: "Method of A"
+}
+```
+
 <h1> Find index's of array who have sum of it is target number that is 9</h1>
 //Input = [2,7,11, 15, 3, 9, 29]
 //Target = 9

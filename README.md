@@ -8,7 +8,7 @@ fun reverseString(strReverseString:String){
    println(charArray.joinToString()); 
    for(i in 0 until charArray.size/2){
        val temp = charArray[i];
-       charArray[0] = charArray [charArray.size - i - 1]
+       charArray[i] = charArray [charArray.size - i - 1]
        charArray [charArray.size - i - 1] = temp
    }
    println(charArray.joinToString())
